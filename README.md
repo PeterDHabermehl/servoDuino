@@ -24,7 +24,7 @@ d) You'll need 2 "Bundhülsen" (flush sleeves) 8,4mm long for the power input. I
 
 Good luck!
 
-
+BTW, have a look at the [LEDs](https://github.com/PeterDHabermehl/servoDuino/blob/master/Doku/LEDs.pdf)
 
 
 
