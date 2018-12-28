@@ -1,7 +1,9 @@
 # servoDuino
 An [Arduino sketch](https://github.com/PeterDHabermehl/servoDuino/raw/master/servoDuino/servoDuino.ino) to serve as an USB-I2C-bridge for PCA9685 servo shields
 
-This is mainly intended to control marble runs standalone (then with a dedicated sketch) or to serve in conjunction with [startIDE](https://github.com/PeterDHabermehl/startIDE) on a [TX-Pi](https://github.com/harbaum/tx-pi).
+This is mainly intended to control [marble runs standalone](https://www.youtube.com/watch?v=XlLrBHuRTXs) (then with a dedicated sketch) or to serve in conjunction with [startIDE](https://github.com/PeterDHabermehl/startIDE) on a [TX-Pi](https://github.com/harbaum/tx-pi).
+
+See this [vid](https://www.youtube.com/watch?v=aEfqSiFy-tU) for a startIDE tool to calibrate servos.
 
 ![servoDuino](https://github.com/PeterDHabermehl/servoDuino/blob/master/Bilder/DSC_1339.JPG)
 
