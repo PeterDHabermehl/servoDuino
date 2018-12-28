@@ -1,5 +1,5 @@
 # servoDuino
-An Arduino sketch to serve as an USB-I2C-bridge for PCA9685 servo shields
+An [Arduino sketch](https://github.com/PeterDHabermehl/servoDuino/raw/master/servoDuino/servoDuino.ino) to serve as an USB-I2C-bridge for PCA9685 servo shields
 
 This is mainly intended to control marble runs standalone (then with a dedicated sketch) or to serve in conjunction with [startIDE](https://github.com/PeterDHabermehl/startIDE) on a [TX-Pi](https://github.com/harbaum/tx-pi).
 
