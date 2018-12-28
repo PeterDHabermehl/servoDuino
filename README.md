@@ -22,6 +22,8 @@ c) You might adjust the voltage to slightly above 5V, so that the voltage drop a
 
 d) You'll need 2 "Bundhülsen" (flush sleeves) 8,4mm long for the power input. If you just get longer ones, carefully shorten them to fit.
 
+e) If you intend to control your servoDuino via startIDE, you have to check the vid:pid of the Arduino. startIDE uses 1a86:7523 by default. If the vid:pid of your device differs (under the ft community firmware, use the App "USBList" to check for your connected USB devices), start your startIDE program code with a comment "# SRDVIDPID xxxx:yyyy" where xxxx:yyyy is the vid:pid of your device.
+
 Good luck!
 
 BTW, have a look at the [LEDs](https://github.com/PeterDHabermehl/servoDuino/blob/master/Doku/LEDs.pdf)
