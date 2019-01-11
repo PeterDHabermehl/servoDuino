@@ -8,8 +8,8 @@
 Adafruit_PWMServoDriver pwm1 = Adafruit_PWMServoDriver(0x40);
 
 #define CODENAME "servoDuino"
-#define CODEVERS "1.0.7"
-#define MAX_CMD 32
+#define CODEVERS "1.1.0"
+#define MAX_CMD 142
 
 char rxCur = 0;
 char rxBuf[MAX_CMD+1];
@@ -260,7 +260,50 @@ void loop() {
               success=1;
             }
           }
-        } 
+        }
+        
+        //
+        // allgemeine I2C-Kommunikation
+        //
+
+        else if((cmd == "i2c_write") && parm) {
+          char * ppt;
+
+          ppt = strtok(parm," ");
+          Wire.beginTransmission(atoi(ppt));
+          ppt=strtok(NULL, " ");
+                    
+          while(ppt!=NULL) {
+            // Serial.println(ppt);
+            Wire.write(atoi(ppt));
+            ppt=strtok(NULL, " ");      
+          }
+          Wire.endTransmission(); 
+          success=1;       
+        }        
+
+        else if((cmd == "i2c_read") && parm) {
+          char * ppt;
+          uint8_t  i;
+          uint8_t  j;
+          
+          ppt = strtok(parm," ");
+          i=atoi(ppt);
+          ppt=strtok(NULL, " ");
+          j=atoi(ppt);
+          
+          Wire.requestFrom(i,j);
+          // Serial.println("I2C read:");
+          while(Wire.available()) {
+            uint8_t ans = Wire.read();
+            Serial.print(ans);
+            Serial.print(" ");
+          }
+          Serial.println();
+          success=2;
+        }
+
+                 
         // Abschluss eines Durchlaufs
         
         if(success!=2) {
