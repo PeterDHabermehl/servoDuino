@@ -22,7 +22,7 @@ b) Adjust the output voltage of the step down converter to ~5V **before** connec
 c) You might adjust the voltage to slightly above 5V, so that the voltage drop at the diode will be compensated for the arduino and the servo shield power terminals are still below 6V
 
 
-d) You'll need 2 "Bundhülsen" (flush sleeves) 8,4mm long for the power input. If you just get longer ones, carefully shorten them to fit.
+d) You'll need 2 "Bundhülsen" (flush sleeves) 8,4mm long for the power input. Just solder them to the input terminals of the step down converter. If you just get longer ones, carefully shorten them to fit.
 
 e) If you intend to control your servoDuino via startIDE, you have to check the vid:pid of the Arduino. startIDE uses 1a86:7523 by default. If the vid:pid of your device differs (under the ft community firmware, use the App "USBList" to check for your connected USB devices), start your startIDE program code with a comment "# SRDVIDPID xxxx:yyyy" where xxxx:yyyy is the vid:pid of your device.
 
