@@ -3,6 +3,8 @@ An [Arduino sketch](https://github.com/PeterDHabermehl/servoDuino/raw/master/ser
 
 This is mainly intended to control [marble runs standalone](https://www.youtube.com/watch?v=XlLrBHuRTXs) (then with a dedicated sketch) or to serve in conjunction with [startIDE](https://github.com/PeterDHabermehl/startIDE) on a [TX-Pi](https://github.com/harbaum/tx-pi).
 
+Discussion about the servoDuino may take place here in the [ftCommunity forums](https://forum.ftcommunity.de/viewtopic.php?f=8&t=5079).
+
 See this [vid](https://www.youtube.com/watch?v=aEfqSiFy-tU) for a startIDE tool to calibrate servos.
 
 ![servoDuino](https://github.com/PeterDHabermehl/servoDuino/blob/master/Bilder/DSC_1339.JPG)
