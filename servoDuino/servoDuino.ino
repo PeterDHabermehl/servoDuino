@@ -8,7 +8,7 @@
 Adafruit_PWMServoDriver pwm1 = Adafruit_PWMServoDriver(0x40);
 
 #define CODENAME "servoDuino"
-#define CODEVERS "1.1.0"
+#define CODEVERS "1.1.1"
 #define MAX_CMD 142
 
 char rxCur = 0;
@@ -293,6 +293,7 @@ void loop() {
           j=atoi(ppt);
           
           Wire.requestFrom(i,j);
+          delay(50);
           // Serial.println("I2C read:");
           while(Wire.available()) {
             uint8_t ans = Wire.read();
